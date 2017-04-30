@@ -45,9 +45,9 @@
               <form method="post" action="{% url 'success' %}" enctype="multipart/form-data">
                   {% csrf_token %}
                   <div>
-                  <div style="color:white;">Song Name: </div><input align="right" type="text" style="height:25px;" name="song_name"></li>
+                  <span><div style="color:white;">Song Name: </div><input align="right" type="text" style="height:25px;" name="song_name"></span>
                   <br><br>
-                  <input type="file" name="file" accept=".mp3">
+                  <input style="color:white;"type="file" name="file" accept=".mp3">
                   <br>
                   <button style="color:black" type="submit">Upload</button>
                   </div>
