@@ -39,13 +39,13 @@
     {% block content %}
     <div class = "container-fluid">
       <div class="row">
-          <div align = "center" style="horiz-align: center; padding-top: 15%; color:white;">
+          <div align = "center" style="horiz-align: center; padding-top: 15%;">
               <h1>Please upload a file</h1>
               <br><br>
               <form method="post" action="{% url 'success' %}" enctype="multipart/form-data">
                   {% csrf_token %}
                   <div>
-                  Song Name: <input align="right" type="text" style="height:25px;" name="song_name"></li>
+                  <div style="color:white;">Song Name: </div><input align="right" type="text" style="height:25px;" name="song_name"></li>
                   <br><br>
                   <input type="file" name="file" accept=".mp3">
                   <br>
