@@ -7,6 +7,7 @@
     {% load staticfiles %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main_css.css' %}">
     <script src="{% static 'js/jquery.js' %}"></script>
     <script src ="{% static 'js/bootstrap.js'%}"></script>
 
@@ -34,11 +35,11 @@
 
 </head>
 
-<body style = "background-color: #D46A6A; overflow-y: scroll;">
+<body style = " background-image:url('{% static 'pictures/background.jpg' %}'); overflow-y: scroll;">
     {% block content %}
     <div class = "container-fluid">
       <div class="row">
-          <div align = "center" style="horiz-align: center; padding-top: 15%;">
+          <div align = "center" style="horiz-align: center; padding-top: 15%; color:white;">
               <h1>Please upload a file</h1>
               <br><br>
               <form method="post" action="{% url 'success' %}" enctype="multipart/form-data">
@@ -48,7 +49,7 @@
                   <br><br>
                   <input type="file" name="file" accept=".mp3">
                   <br>
-                  <button type="submit">Upload</button>
+                  <button style="color:black" type="submit">Upload</button>
                   </div>
               </form>
             </div>
