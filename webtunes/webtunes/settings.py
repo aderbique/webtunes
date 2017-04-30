@@ -28,7 +28,9 @@ SECRET_KEY = 'iu*r7(5irqcie4ckrf3!1#pz49bdji5h7d3#gm_q_*d&fk_o$*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost',
+		'dbqsolutions.com',
+		'127.0.0.0',]
 
 
 # Application definition
